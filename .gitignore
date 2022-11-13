@@ -1,3 +1,6 @@
+### Tracing logs ###
+tui_tracing.log
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
