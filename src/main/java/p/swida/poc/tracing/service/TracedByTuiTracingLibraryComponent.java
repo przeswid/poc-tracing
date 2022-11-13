@@ -1,4 +1,4 @@
-package p.swida.poc.tracing;
+package p.swida.poc.tracing.service;
 
 import com.tui.architecture.tracerv2.TracerService;
 import com.tui.architecture.tracerv2.TracerTags;
