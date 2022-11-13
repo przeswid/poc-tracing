@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <property name="springAppName">${sys:spring.application.name}</property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout
+                    pattern="%-5p|%d{ISO8601}{GMT}|TraceId=%X{traceId},SpanId=%X{spanId}|%c{1}|%replace{%m}{[\r\n]+|[\n]+}{/}%ex{separator(/)}%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <Logger name="org.springframework" level="WARN"/>
+        <Logger name="com.tui.architecture" level="DEBUG"/>
+    </Loggers>
+</Configuration>

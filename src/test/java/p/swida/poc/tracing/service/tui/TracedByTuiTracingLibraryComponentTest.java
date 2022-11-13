@@ -1,4 +1,4 @@
-package p.swida.poc.tracing.service;
+package p.swida.poc.tracing.service.tui;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
